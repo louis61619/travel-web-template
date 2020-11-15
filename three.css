@@ -1,0 +1,401 @@
+/*全局設定*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 0;
+  }
+h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #1e1e1e;
+}
+  h2 {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    color: #1e1e1e;
+  }
+  
+  h4 {
+    font-size: 16px;
+    margin: 3px 0;
+    color: #646464;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #1e1e1e;
+    letter-spacing: 1px;
+    line-height: 22px;
+  }
+  
+  span {
+    font-size: 16xp!important;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+
+/*主頁內容*/
+.page-title-text{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 760px;
+  //min-width: 320px;
+  text-align: center;
+  margin-top:50px;
+  margin-bottom: 100px;
+  padding:25px;
+}
+.page-title-text>p{
+  width: 100%;
+    color: #646464;
+    letter-spacing: 2.5px;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.main{
+    margin-top: 100px;
+    max-width:1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.article-block{
+    width:100%;
+   
+    
+}
+.article-title{
+    width:100%;
+    height:15vw;
+    max-height: 250px;
+    min-height:150px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 30px;
+    
+}
+.title-back-one{
+  background-image: url(./images/dadaocheng-img-01.jpg);
+}
+.title-back-two{
+  background-image: url(./images/dadaocheng-img-02.jpg);
+}
+.title-back-three{
+  background-image: url(./images/dadaocheng-img-03.jpg);
+}
+.title-back-four{
+  background-image: url(./images/dadaocheng-img-04.jpg);
+}
+.article-title>h1{
+  display: block;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50% ,-50%);
+  color: white;
+}
+.article-content{
+    width:100%;
+    //border:1px solid green;
+    padding:40px;
+    margin-bottom:10%;
+    //background-image: url("./images/whiteback.jpeg");
+    background: #e6e6e6;
+    
+    display: none;
+    
+    
+
+
+
+}
+
+.article-width{
+  width:100%;
+  position: relative;
+
+}
+.article-height{
+  display: block;
+  padding-bottom: 80%;
+  //background: linear-gradient(135deg,#4ab9e1 0,#b9e0e6 60%);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 6%;
+}
+.sights-block{
+  position: absolute;
+  
+  width:calc(50% - 6px);
+  height:calc(50% - 6px);
+  //border: 1px solid red;
+  overflow: hidden;
+  
+
+}
+.sights-block>h1{
+  display: block;
+  position: absolute;
+  text-shadow: 2px 2px 2px rgb(49, 49, 49);
+  top:50%;
+  left:50%;
+  transform: translate(-50% ,-50%);
+  color: white;
+  width:100%;
+  text-align: center;
+
+}
+.sights-left-one{
+  top:0;
+  left:0;
+  margin-right:12px;
+  margin-bottom: 12px;
+
+}
+.sights-right-one{
+  top:0;
+  right:0;
+  margin-left:12px;
+  margin-bottom: 12px;
+}
+.sights-left-two{
+  left:0;
+  bottom:0;
+}
+.sights-right-two{
+  right:0;
+  bottom:0;
+}
+.sights-block>img{
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.sights-text-block{
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0, 0, 0, 0.4); 
+  transform-origin: 100% 50%;
+  transition: 0.5s ease-in;
+  transform: translateX(95%);
+  overflow: hidden;
+  
+
+  
+
+
+}
+.sights-block:hover .sights-text-block{
+  transform: translateX(0);
+}
+
+.sights-text{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:80%;
+
+
+  
+}
+.sights-text>h2{
+  color:white;
+  margin-bottom: 25px;
+}
+
+.sights-content{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+.sights-content>p{
+  margin-bottom: 15px;
+}
+
+#button{
+  
+  float: right;
+  
+
+  
+}
+
+.one::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.drop-down{
+  text-align: center;
+  margin-bottom: 6%;
+  cursor: pointer;
+}
+.drop-down-text{
+  font-size: 20px;
+  color: #646464;
+    letter-spacing: 2.5px;
+    line-height: 2;
+    text-align: center;
+
+}
+.drop-down-text::after{
+  content: "";
+    margin: 0 auto;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 10px 0 10px;
+    border-color: #ffe73d transparent transparent transparent;
+
+}
+.drop-up{
+  text-align: center;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+.drop-up-text{
+  font-size: 20px;
+  color: #646464;
+    letter-spacing: 2.5px;
+    line-height: 2;
+    text-align: center;
+
+}
+.drop-up-text::before{
+  content: "";
+    margin: 0 auto;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 12px 10px;
+    border-color: transparent transparent #ffe73d transparent;
+
+
+}
+.main{
+  margin-bottom: 350px;
+}
+
+@keyframes jumpdown{
+
+}
+
+@media screen and (max-width:991px){
+  .article-height{
+    padding-bottom: 220%;
+    
+  }
+  .sights-block {
+    left: 10%;
+    position: absolute;
+    width: 80%;
+    /* width: 100%; */
+    height: calc(25% - 12px);
+    //: ;
+    
+    overflow: hidden;
+
+  }
+  .sights-left-one .sights-right-one, .sights-right-two, .sights-left-two{
+    margin: 0;
+
+
+  }
+  .sights-left-one{
+    top:0;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  .sights-right-one{
+    top:25%;
+    margin-left: 0;
+    margin-bottom: 0;
+
+  }
+  .sights-left-two{
+    top:50%;
+  }
+  .sights-right-two{
+    top:75%;
+  }
+
+}
+@media screen and (max-width:767px){
+  .article-height{
+    padding-bottom: 300%;
+    
+  }
+
+}
+@media screen and (max-width:600px){
+  .article-height{
+    padding-bottom: 400%;
+    
+  }
+
+}
+@media screen and (max-width:525px){
+  .sights-block {
+    left: 5%;
+    position: absolute;
+    width: 90%;
+    /* width: 100%; */
+    height: calc(25% - 12px);
+    //: ;
+    
+    overflow: hidden;
+
+  }
+  .sights-content>p{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .article-title>h1{
+    font-size:35px;
+  }
+  .drop-down-text{
+    font-size:14px;
+  }
+  .drop-up-text{
+    font-size: 14px;
+  }
+  .sights-block>h1{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width:500px){
+  .article-height{
+    padding-bottom: 450%;
+    
+  }
+  .sights-text>h2{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width:450px){
+  .article-content{
+    padding: 10px;
+    width:100%;
+  }
+  .article-height{
+    padding-bottom: 550%;
+    
+  }
+
+}

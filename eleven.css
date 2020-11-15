@@ -1,0 +1,550 @@
+/*全局設定*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 0;
+  }
+h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #1e1e1e;
+}
+  h2 {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    color: #1e1e1e;
+  }
+  h3{
+    font-size:22px;
+    letter-spacing: 1px;
+    color: #1e1e1e;
+  }
+  h4 {
+    font-size: 16px;
+    
+    color: #646464;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #1e1e1e;
+    letter-spacing: 1px;
+    line-height: 22px;
+  }
+  
+  span {
+    font-size: 16xp!important;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  /*主頁內容*/
+  
+  .ipt-block{
+    max-width:1200px;
+    padding:10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .text-ipt{
+    width:calc(100% - 120px);
+    height:35px;
+    
+    font-size: 14px;
+    padding-left:20px;
+    border: 2px solid #00B4CC;
+    color: #00B4CC;
+}
+    
+  
+  .searchbtn{
+    width:80px;
+    border-radius: 5px;
+    display: flex;
+    background-color: #00B4CC;
+    color:white;
+    font-size: 18px;
+    height:50px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+  }
+  .searchbtn>img{
+    width:30px;
+    height:30px;
+  }
+  /*總數*/
+  .total-block{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    border-bottom: 1px #eaeaea solid;
+    margin-bottom: 18px;
+  }
+  .total-block>p{
+    margin-bottom: 18px;
+    font-size: 18px;
+  }
+  /*分類*/
+  .filter-block{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    margin-bottom: 30px;
+    height:40px;
+    
+    
+    
+
+  }
+  .sort{
+    font-size:16px;
+    width:150px;
+    display: flex;
+    align-items: center;
+    
+    background: #e6e6e6;
+    justify-content: center;
+
+  }
+  .sort>img{
+    height:20px;
+    margin-right: 10px;
+  }
+  .filter-menu{
+    display: flex;
+    border: 1px #e6e6e6 solid;
+    background: #f7f7f7;
+  }
+  .filter-menu>li{
+    font-size: 16px;
+    
+    max-width:150px;
+    
+    padding: 0 30px;
+    //padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px #e6e6e6 solid;
+    cursor: pointer;
+    position: relative;
+    
+   
+  }
+  .filter-menu>li:first-child{
+    padding-right: 30px;
+  }
+  .filter-menu>li:last-child{
+    border-right: 0px;
+  }
+  .filter-menu>li:hover{
+    background-color: ;
+  }
+  .filter-menu>li::after{
+    //content: "";
+    width: 19px;
+    margin-left: 20px;
+    
+    height: 13px;
+    
+    background-image: url("images/next90.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+  }
+  
+  .filter-menu>li:hover{
+    color: #fff;
+    background: #0065b4;
+  }
+
+
+
+  /*卡片頁*/
+  .page-content{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  .local-card{
+    width:calc(25% - 20px);
+    margin-bottom: 30PX;
+    //border: 1px solid green;
+    position: relative;
+    box-shadow: 0 0 2px 1px rgba(170,170,170,.5);
+    overflow: hidden;
+    
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    
+  }
+  /*.local-card:nth-child(4n){
+    margin-right: 0;
+  }*/
+  .local-card-img{
+    display: block;
+    padding-bottom: 75%;
+    overflow: hidden;
+    position: relative;
+    //background: linear-gradient(135deg,#4ab9e1 0,#b9e0e6 60%);
+  }
+  .local-card-img>img{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    object-fit: cover;
+  }
+  .local-card-text{
+    width:100%;
+    padding: 10px 15px;
+    overflow: hidden;
+    display: flex;
+    height: 118px;
+    flex-flow: column wrap;
+
+  }
+  .local-card-text>p{
+    margin-bottom: 5px;
+    color: #646464;
+  }
+  .see-people{
+    height:16px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    
+    margin-top: auto;
+    margin-left: auto;
+    color: gray;
+    
+  }
+  .see-people>img{
+    height:100%;
+    margin-right: 10px;
+  }
+  .add-fav{
+    position: absolute;
+    top:0;
+    right:0;
+    z-index:3;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.3);
+    margin-top: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-image: url(./images/nofavorite.png);
+    background-position: center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+  }
+  .add-fav:hover{
+    background-image: url(./images/nofavorite.png);
+    background-color: #fd6e6e;
+  }
+  .add-nofav{
+    position: absolute;
+    top:0;
+    right:0;
+    z-index:3;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-image: url(./images/favorite2.png);
+    background-position: center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    transform-origin: center;
+    
+  }
+  
+  
+  .add-fav>img{
+    
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width:30px;
+  }
+  .card-text-block{
+    display: block;
+      width:100%;
+
+  }
+  .local-card-text>h3{
+    font-weight: normal;
+    
+    display: block;
+  font-size: 18px;
+  transition: all 0.3s;
+  letter-spacing: 2px;
+    text-overflow: ellipsis;
+    position: relative;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .local-card-text>h3::after{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:100%;
+    left: 0;
+    top:0;
+    //border-bottom: 1px solid #fd6e6e;
+  }
+  .page-bar{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    
+  }
+  
+  .number-contact>*{
+    font-size:16px;
+    height:35px;
+    width:35px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #757575;
+    color:white;
+    
+    margin: 5px;
+    flex-direction: column;
+  }
+  .page-bar>*{
+    font-size:16px;
+    height:35px;
+    width:35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #0065b4;
+    margin: 8px;
+    border-radius: 4px;
+    transition: .3s;
+  }
+  .number-contact{
+    border: none;
+    display: flex;
+    width:auto;
+    transition: .3s;
+  }
+  .page-contact{
+    transition: .3s;
+  }
+  .number-contact>*:first-child{
+    background-color: #0065b4;
+    color:white;
+
+  }
+  .page-contact:hover{
+    background-color: #0065b4;
+    color:white;
+  }
+  .go-top{
+    position: absolute;
+    top: -1px;
+    left: -20px;
+    width:80px;
+    height:25px;
+    background-color: #fd6e6e;
+    z-index: 3;
+    transform: rotate(-45deg);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    
+  }
+  .go-top>p{
+    color: white;
+    font-size: 16px;
+    transform: rotate(45deg);
+
+  }
+  
+  @media screen and (min-width:992px){
+    .local-card-content{
+      display: block;
+      width:100%;
+    }
+    
+    
+    .local-card:hover{
+      box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.05, 1.05) translateZ(0);
+    }
+    .local-card:hover .local-card-content>.local-card-img>img{
+      width:160%;
+      height:100%;
+      opacity: 0.6;
+    }
+    .local-card:hover .local-card-content>.card-text-block{
+      background: rgba(255, 255, 255, 0.5);
+    }
+    /*.local-card:hover .local-card-content>.card-text-block>.local-card-text>h3{
+      transform:scale(1.05, 1.05) translateZ(0);
+      
+    }*/
+    .local-card-text>h3{
+      font-weight: normal;
+      
+      display: block;
+    font-size: 18px;
+    transition: all 0.3s;
+    letter-spacing: 2px;
+      text-overflow: ellipsis;
+      position: relative;
+    }
+    .local-card-text>h3::after{
+      content: "";
+      position: absolute;
+      width:100%;
+      height:100%;
+      left: 0;
+      top:0;
+      //border-bottom: 1px solid #fd6e6e;
+    }
+    
+    .local-card-content>.local-card-img{
+      padding-bottom: 120%;
+    }
+    .local-card-img>img{
+      height:66%;
+      transition: 0.2s all ease-out;
+      left:0;
+    }
+    
+    .card-text-block{
+      position: absolute;
+      bottom:0;
+      width: 100%;
+      background: white;
+    }
+    
+  }
+  @media screen and (max-width:991px){
+    .card-text-block{
+      display: block;
+        width:calc(100% - 150px);
+  
+    }
+    .local-card{
+      max-width: 580px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    
+    .local-card {
+      width: 100%;
+    }
+    .see-people{
+      margin-top: 0;
+    }
+    .local-card-img{
+      width: 150px;
+    height: 150px;
+    padding-bottom: 0;
+    }
+    .local-card-content{
+      display: flex;
+      
+    }
+    .local-card-text{
+      display: flex;
+      
+      flex-flow: column nowrap;
+      
+      justify-content: flex-start;
+      
+      align-items: flex-start;
+      float: left;
+      width: 100%;
+      height: 150px;
+      padding: 10px 15px;
+
+    }
+    .see-people{
+      margin-top: auto;
+      margin-left: auto;
+    }
+    .local-card:hover{
+      box-shadow: 0 0 10px 2px #aaa;
+    }
+  }
+  @media screen and (max-width:525px){
+    h3{
+      font-size: 18px;
+    }
+  }
+  @media screen and (min-width:768px){
+    .filter-menu>li:first-child::after{
+      content: none;
+    }
+    
+    .phone-filter{
+      display: none;
+    }
+  }
+  @media screen and (max-width:767px){
+    .filter-menu{
+      display: none;
+    }
+    .phone-filter{
+      display: block;
+    }
+    .phone-filter{
+      width:100%;
+    }
+    .phone-filter>li{
+      width: 100%;
+      height: 100%;
+    }
+    .filter-menu>li{
+      max-width: 100%;
+    }
+    
+    .number-contact>*{
+      display: none;
+    }
+    .number-contact>*:first-child{
+      display: flex;
+    }
+
+  }
