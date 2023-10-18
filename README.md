@@ -1,2 +1,1 @@
-# CSS-example
-a travle web for CSS practice
+my first web practice results
